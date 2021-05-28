@@ -12,6 +12,8 @@ spec:
       labels:
         app: netcore5 
     spec:
+      nodeSelector:
+        kubernetes.io/os: linux
       containers:
         - name: netcore5 
           image: acr2705.azurecr.io/netcore5
