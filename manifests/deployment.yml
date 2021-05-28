@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: netcore5 
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: netcore5
@@ -16,6 +16,6 @@ spec:
         kubernetes.io/os: linux
       containers:
         - name: netcore5 
-          image: acr2705.azurecr.io/netcore5
+          image: classicwebapp/netcore5
           ports:
-          - containerPort: 8080
+          - containerPort: 80
