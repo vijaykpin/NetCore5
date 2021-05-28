@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: netcore5 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: netcore5
+  template:
+    metadata:
+      labels:
+        app: netcore5 
+    spec:
+      containers:
+        - name: netcore5 
+          image: acr2705.azurecr.io/netcore5
+          ports:
+          - containerPort: 8080
