@@ -13,7 +13,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '87831f14-2f58-4842-948a-cc16ab65ea96'
   imageRepository: 'netcore5'
-  containerRegistry: 'acr2705.azurecr.io'
+  containerRegistry: 'hcbuacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'acr270518439887-auth'
